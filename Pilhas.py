@@ -32,10 +32,10 @@ class Fila:
    def __init__(self):
        self.itens = []   # cria a lista vazia para a fila
 
-   def enqueue(self, nome):  # adicionar no fim da fila
+   def push(self, nome):  # adicionar no fim da fila
        self.itens.append(nome)
 
-   def dequeue(self):  # remover o primeiro da fila
+   def pop(self):  # remover o primeiro da fila
        if not self.vazia():
            return self.itens.pop(0)  # tira o da frente
        return None
@@ -56,6 +56,7 @@ f.mostrar()
 
 print("Removido:", f.dequeue())  # remove o primeiro
 f.mostrar()
+
 
 
 
