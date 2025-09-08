@@ -1,0 +1,9 @@
+import csv
+from Fila import *  # Certifique-se de que Fila.py está no mesmo diretório ou no path
+
+with open('dados.csv', newline='', encoding='utf-8') as csvfile:
+   leitor = csv.reader(csvfile)
+   next(leitor)  # Pula o cabeçalho
+
+   for linha in leitor:
+       print(linha)
